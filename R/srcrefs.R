@@ -267,7 +267,7 @@ pkg_srcrefs <- function(x) {
 #' @rdname pkg_srcrefs
 #' @export
 pkg_srcrefs.environment <- function(x) {
-  package_check_has_keep_source(x)
+  # package_check_has_keep_source(x)
   srcs <- srcrefs(x)
 
   if (isNamespace(x)) {
